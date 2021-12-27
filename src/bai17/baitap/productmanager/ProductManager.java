@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProductManager {
+
     Scanner scanner = new Scanner(System.in);
     List<Product> products = new ArrayList<>();
 
