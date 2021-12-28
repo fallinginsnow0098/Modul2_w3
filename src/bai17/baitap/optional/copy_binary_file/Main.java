@@ -17,8 +17,6 @@ public class Main {
             }
             outputStream.close();
             System.out.println("Byte count = " + count);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
