@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class Password {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String REGEX = "^{8,}";
+        String REGEX = "^(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
         Pattern pattern ;
         Matcher matcher ;
         do {
@@ -20,6 +20,6 @@ public class Password {
         } else {
             System.err.println("False");
         }
-        } while (matcher.find()) ;
+        } while (!matcher.find()) ;
     }
 }

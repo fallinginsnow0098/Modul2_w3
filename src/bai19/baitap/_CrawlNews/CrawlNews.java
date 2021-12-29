@@ -11,13 +11,13 @@ import java.util.regex.Pattern;
 public class CrawlNews {
     public static void main(String[] args) {
         try {
-            URL url = new URL("https://dantri.com.vn/xa-hoi/pho-thu-tuong-khong-cho-phep-cham-tre-tien-do-san-bay-long-thanh-20211228151357971.htm");
+            URL url = new URL("https://dantri.com.vn/the-thao/barcelona-no-bom-tan-dau-tien-duoi-thoi-hlv-xavi-20211229041145680.htm");
             Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
             scanner.useDelimiter("\\Z");
             String content = scanner.next();
             scanner.close();
             content = content.replaceAll("\\n+","");
-            Pattern p = Pattern.compile("property=\"(.*?)\">");
+            Pattern p = Pattern.compile("dt-news__content=\"(.*?)\">");
             Matcher m = p.matcher(content);
             while (m.find()){
                 System.out.println(m.group(1));
