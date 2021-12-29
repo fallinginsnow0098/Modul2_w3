@@ -27,9 +27,7 @@ public class CrawlSongExample {
             while (m.find()) {
                 System.out.println(m.group(1));
             }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
+        } catch (MalformedURLException | UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();

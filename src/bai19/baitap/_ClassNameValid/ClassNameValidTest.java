@@ -8,6 +8,5 @@ public class ClassNameValidTest {
             boolean isValid = classNameValid.validate(className);
             System.out.println("Class name [" + className + "] is valid: " + isValid);
         }
-
     }
 }
