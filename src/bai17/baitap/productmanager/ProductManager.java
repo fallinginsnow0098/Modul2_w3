@@ -37,7 +37,7 @@ public class ProductManager {
     public Product creatProduct(){
         Product product = null;
         System.out.println("Nhập tên");
-        String name = scanner.nextLine();
+        String name = "Huấn";
         System.out.println("Nhập hãng");
         String brand = scanner.nextLine();
         System.out.println("Nhập giá");
